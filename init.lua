@@ -296,17 +296,18 @@ require('telescope').setup {
     path_display = {
       "absolute"
     },
-    extensions = {
-      project  = {
-        base_dirs = {
-          'C:/Users/Asani/AppData/Local/nvim',
-          'D:/spe-projects',
-          'D:/spe-projects/payfac',
-          'D:/projects',
-        }
-      }
-    }
   },
+  extensions = {
+    project  = {
+      base_dirs = {
+        'C:/Users/Asani/AppData/Local/nvim',
+        'D:/spe-projects',
+        'D:/projects',
+      },
+      sync_with_nvim_tree = true,
+      order_by = "asc"
+    }
+  }
 }
 
 -- Enable telescope fzf native, if installed
