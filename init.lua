@@ -131,6 +131,8 @@ require('lazy').setup({
         section_separators = '',
       },
       sections = {
+        -- remove git branch info for consistent filepath
+        lualine_b = {},
         lualine_c = {
           {
             'filename',
