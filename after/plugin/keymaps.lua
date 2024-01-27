@@ -1,5 +1,6 @@
 vim.api.nvim_set_keymap('n', '<F3>', ':NvimTreeToggle<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap('n', '<F9>', ':FloatermToggle<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap('n', '<F8>', ':DBUIToggle<CR>', {noremap=true, silent=true})
 -- TODO
 -- set keymap to reload loading snippet in case snippets get updated
 -- (which should be regularly)
