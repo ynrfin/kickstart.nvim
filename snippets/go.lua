@@ -15,8 +15,8 @@ return {
     i(1, "lohee"),
     t({ "\")", ""}),
   }),
-  -- lv --> fmt.Printf("$1 :%+v\n", $2)
-  -- lv --> fmt.Printf("one :%+v\n", two)
+  -- lv --> fmt.Printf("$1 :%+v\n", $1)
+  -- lv --> fmt.Printf("one :%+v\n", one)
   s("lf", fmt("log.Printf(\"{}: %+v\\n\", {})", {i(1, "v"), rep(1)}))
 }
 
