@@ -208,7 +208,7 @@ require('lazy').setup({
       },
     },
   },
-
+  {
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
@@ -237,6 +237,7 @@ require('lazy').setup({
           return vim.fn.executable 'make' == 1
         end,
       },
+      'nvim-telescope/telescope-project.nvim',
     },
   },
 
