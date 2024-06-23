@@ -7,4 +7,5 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 
 vim.opt.completeopt= 'menu,menuone,preview'
+vim.opt.gdefault = true
 
