@@ -6,7 +6,10 @@ return {
       update_focused_file = {
         update_cwd = true,
       },
-      sync_root_with_cwd = true
+      sync_root_with_cwd = true,
+      git = {
+        ignore = false
+      }
     }
   end,
 }
