@@ -8,4 +8,5 @@ vim.opt.hlsearch = true
 
 vim.opt.completeopt= 'menu,menuone,preview'
 vim.opt.gdefault = true
+vim.opt.laststatus = 3
 
