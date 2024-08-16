@@ -205,6 +205,7 @@ require('lazy').setup({
         theme = 'onedark',
         component_separators = '|',
         section_separators = '',
+        globalstatus = true,
       },
       sections = {
         lualine_c = {
@@ -677,6 +678,10 @@ cmp.setup {
     { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'path' },
+  },
+  window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
   },
 }
 
