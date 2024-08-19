@@ -6,11 +6,18 @@ local fmt = require("luasnip.extras.fmt").fmt
 local rep = require("luasnip.extras").rep
 
 return {
-  -- dd --> die(var_dump(""))
+  -- dd --> die(var_dump(""));
   s("dd", {
-    t("die(var_dump("),
-    i(1, "$var"),
-    t({ "))", ""}),
+    t("die(var_dump($"),
+    i(1, "var"),
+    t({ "));", ""}),
+  }),
+  -- for Code igniter
+  -- ld --> log_message("debug", <your message>);
+  s("ld", {
+    t("log_message(\"debug\",\""),
+    i(1, "message"),
+    t({ "\");", ""}),
   })
 }
 
