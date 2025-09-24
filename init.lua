@@ -176,6 +176,12 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 -- when indenting with '>', use 2 spaces width
 vim.o.shiftwidth = 2
+
+-- when search and replace using :'<,'>s,
+-- select not only fist, but all occurences on each line
+vim.opt.gdefault = true
+-- END of my setting
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
