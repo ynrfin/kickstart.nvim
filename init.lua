@@ -169,6 +169,13 @@ vim.o.confirm = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- My additional settings from old setup
+vim.o.expandtab = true
+-- show existing tab with 2 spaces width
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+-- when indenting with '>', use 2 spaces width
+vim.o.shiftwidth = 2
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
